@@ -1,0 +1,27 @@
+.navbar.custom-nav {
+
+    .navbar-brand {
+        padding-left: 7rem;
+        padding-right: 1rem;
+    }
+
+    padding: 2rem 0;
+    font-family: 'gt-america';
+    font-size: 14px;
+    font-weight: bold;
+    background-color: var(--primary);
+
+    .nav-item {
+        cursor: pointer;
+        margin-right: 2rem;
+    }
+
+    .dropdown-toggle:after {
+        font-family: FontAwesome;
+        content: "\f107";
+        display: inline-block;
+        padding-right: 3px;
+        vertical-align: middle;
+        border-top: 0;
+    }
+}

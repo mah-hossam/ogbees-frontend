@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+/* global styles */
+:root {
+    --primary: #D6FF62;
+}
+
+@font-face {
+    font-family: 'gt-america';
+    src: url('assets/fonts/GT-America-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
