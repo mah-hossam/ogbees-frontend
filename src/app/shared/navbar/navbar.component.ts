@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+  @ViewChild('navbarNav', { static: true }) navbarNav!: ElementRef;
+  toggleMenu() { this.navbarNav.nativeElement.classList.toggle('show'); }
 
 }

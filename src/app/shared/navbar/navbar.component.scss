@@ -38,6 +38,10 @@
             font-family: "FontAwesome";
             font-size: 22px;
         }
+
+        &:focus {
+            box-shadow: none;
+        }
     }
 }
 
@@ -49,6 +53,12 @@
 
         .navbar-brand {
             padding-left: 1rem;
+        }
+
+        .navbar-collapse {
+            padding-left: 1rem;
+            padding-top: 1rem;
+            transition-duration: 0.3;
         }
     }
 }
