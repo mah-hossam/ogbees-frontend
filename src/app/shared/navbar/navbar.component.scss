@@ -24,4 +24,43 @@
         vertical-align: middle;
         border-top: 0;
     }
+
+    .navbar-toggler {
+        border: none;
+        line-height: inherit;
+
+        .navbar-toggler-icon {
+            background-image: none;
+        }
+
+        .navbar-toggler-icon::after {
+            content: "\f0c9";
+            font-family: "FontAwesome";
+            font-size: 22px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+
+    /* Styles for tablets and smaller devices */
+    .navbar.custom-nav {
+        padding: 0;
+
+        .navbar-brand {
+            padding-left: 1rem;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Styles for mobile devices */
+    .navbar.custom-nav {
+        padding: 0;
+
+        .navbar-brand {
+            padding-left: 1rem;
+        }
+    }
 }
