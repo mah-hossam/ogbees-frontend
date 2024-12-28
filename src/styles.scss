@@ -3,9 +3,18 @@
     --primary: #D6FF62;
 }
 
+
 @font-face {
     font-family: 'gt-america';
     src: url('assets/fonts/GT-America-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'gt-america-bold-italic';
+    src: url('assets/fonts/GT-America-Bold-Italic.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

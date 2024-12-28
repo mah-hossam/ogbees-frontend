@@ -1,4 +1,5 @@
 .navbar.custom-nav {
+    height: 20vh;
 
     .navbar-brand {
         padding-left: 7rem;
@@ -50,6 +51,7 @@
     /* Styles for tablets and smaller devices */
     .navbar.custom-nav {
         padding: 0;
+        height: auto;
 
         .navbar-brand {
             padding-left: 1rem;

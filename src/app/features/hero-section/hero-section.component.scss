@@ -1,0 +1,162 @@
+.hero-section_container {
+    height: 80vh;
+    background-color: var(--primary);
+    background-image: url('/assets/images/main-bg-pattern.png');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+
+        .main-content {
+            margin-left: 7rem;
+            width: 50%;
+
+            h2 {
+                font-family: 'gt-america-bold-italic';
+                font-size: 5rem;
+                max-width: 90%;
+                letter-spacing: -5px;
+                margin-top: 2rem;
+            }
+
+            h6 {
+                font-family: 'gt-america';
+                font-weight: lighter;
+                font-size: 2rem;
+            }
+
+            .custom-hero_btn {
+                width: 248px;
+                padding: 16px;
+                margin-top: 1.5rem;
+                color: var(--primary);
+            }
+        }
+
+        .animated-content {
+            display: flex;
+            overflow: hidden;
+            width: 50%;
+
+            img {
+                width: 50%;
+                height: auto;
+                transform: rotate(45);
+
+                &:first-child {
+                    animation: slide 5s linear infinite;
+                }
+
+                &:last-child {
+                    animation: slide-reverse 5s linear infinite;
+
+                }
+            }
+        }
+    }
+
+
+}
+
+@keyframes slide {
+    0% {
+        transform: rotate(15deg) translateY(100%);
+    }
+
+    100% {
+        transform: rotate(15deg) translateY(-100%);
+    }
+}
+
+@keyframes slide-reverse {
+    0% {
+        transform: rotate(15deg) translateY(-100%);
+    }
+
+    100% {
+        transform: rotate(15deg) translateY(100%);
+    }
+}
+
+
+@media (min-width:992px) and (max-width:1032px) {
+
+    // Small Laptops
+    .hero-section_container {
+        height: 90vh;
+
+        .content {
+            .main-content {
+
+                h2 {
+                    font-size: 2rem !important;
+                    letter-spacing: normal !important;
+                }
+
+                h6 {
+                    font-size: 1rem !important;
+                }
+
+                .custom-hero_btn {
+                    width: 174px !important;
+                    padding: 7px !important;
+                }
+            }
+
+        }
+    }
+
+
+}
+
+@media (max-width: 991px) {
+    /* Styles for tablets and smaller devices */
+
+    .hero-section_container {
+        height: 90vh;
+        background-image: url('/assets/images/main-bg-pattern-sm.png');
+        background-position: bottom center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+
+        .content {
+            display: block;
+
+            .main-content {
+                margin-left: 0;
+                text-align: center;
+                padding: 1rem;
+                width: 100%;
+
+                h2 {
+                    max-width: 100%;
+                    font-size: 2rem;
+                    letter-spacing: normal;
+                }
+
+                h6 {
+                    font-size: 1rem;
+                }
+
+                .custom-hero_btn {
+                    width: 174px;
+                    padding: 7px;
+                }
+            }
+
+            .animated-content {
+                display: none;
+            }
+
+
+        }
+
+    }
+
+}
+
+@media (max-width: 480px) {}
