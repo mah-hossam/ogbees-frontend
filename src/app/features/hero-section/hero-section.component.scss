@@ -10,10 +10,13 @@
         display: flex;
         justify-content: space-between;
         height: 100%;
+        overflow: hidden;
+        will-change: transform;
+
 
         .main-content {
             margin-left: 7rem;
-            width: 50%;
+            width: 60%;
 
             h2 {
                 font-family: 'gt-america-bold-italic';
@@ -39,24 +42,26 @@
 
         .animated-content {
             display: flex;
-            overflow: hidden;
-            width: 50%;
+            flex-direction: column;
+            transform: rotate(15deg);
+            animation: slide 8s linear infinite;
 
             img {
-                width: 50%;
-                height: auto;
-                transform: rotate(45);
-
-                &:first-child {
-                    animation: slide 5s linear infinite;
-                }
-
-                &:last-child {
-                    animation: slide-reverse 5s linear infinite;
-
-                }
+                height: 100%;
             }
         }
+
+        .sec-animated-content {
+            display: flex;
+            flex-direction: column;
+            transform: rotate(15deg);
+            animation: slide-reverse 8s linear infinite;
+
+            img {
+                height: 100%;
+            }
+        }
+
     }
 
 
@@ -64,23 +69,24 @@
 
 @keyframes slide {
     0% {
-        transform: rotate(15deg) translateY(100%);
+        transform: rotate(15deg) translateY(0%);
     }
 
     100% {
-        transform: rotate(15deg) translateY(-100%);
+        transform: rotate(15deg) translateY(-300%);
     }
 }
 
 @keyframes slide-reverse {
     0% {
-        transform: rotate(15deg) translateY(-100%);
+        transform: rotate(15deg) translateY(-300%);
     }
 
     100% {
-        transform: rotate(15deg) translateY(100%);
+        transform: rotate(15deg) translateY(0%);
     }
 }
+
 
 
 @media (min-width:992px) and (max-width:1032px) {
