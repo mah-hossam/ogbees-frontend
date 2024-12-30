@@ -62,10 +62,17 @@
             }
         }
 
+        .animated-content-sm {
+            display: none;
+        }
+
     }
 
 
 }
+
+
+// Animation Frames
 
 @keyframes slide {
     0% {
@@ -87,6 +94,97 @@
     }
 }
 
+@keyframes slide-x-axis {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-110%);
+    }
+}
+
+@media (min-width:2560px) {
+    .hero-section_container {
+        .content {
+            .main-content {
+                h2 {
+                    font-size: 7rem !important;
+                }
+
+                h6 {
+                    font-size: 3rem !important;
+                }
+
+            }
+
+            .animated-content {
+
+                img {
+                    height: 80%;
+                }
+            }
+
+            .sec-animated-content {
+
+                img {
+                    height: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1201px) and (max-width:1352px) {
+    .hero-section_container {
+        .content {
+            .main-content {
+                h2 {
+                    font-size: 3rem !important;
+                    letter-spacing: normal !important;
+                }
+
+                h6 {
+                    font-size: 1.5rem !important;
+                }
+
+            }
+        }
+    }
+}
+
+
+@media (min-width:992px) and (max-width:1200px) {
+    .hero-section_container {
+        .content {
+            .main-content {
+                h2 {
+                    font-size: 2rem !important;
+                    letter-spacing: normal !important;
+                }
+
+                h6 {
+                    font-size: 1rem !important;
+                }
+
+            }
+
+            .animated-content {
+
+                img {
+                    height: 60%;
+                }
+            }
+
+            .sec-animated-content {
+
+                img {
+                    height: 60%;
+                }
+            }
+        }
+    }
+}
 
 
 @media (min-width:992px) and (max-width:1032px) {
@@ -154,8 +252,19 @@
                 }
             }
 
-            .animated-content {
+            .animated-content,
+            .sec-animated-content {
                 display: none;
+            }
+
+            .animated-content-sm {
+                display: flex;
+                justify-content: space-between;
+                animation: slide-x-axis 6s linear infinite;
+
+                img {
+                    margin: 4rem .5rem;
+                }
             }
 
 
@@ -164,5 +273,3 @@
     }
 
 }
-
-@media (max-width: 480px) {}
