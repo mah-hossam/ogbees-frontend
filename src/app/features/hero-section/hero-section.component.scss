@@ -47,7 +47,7 @@
             animation: slide 8s linear infinite;
 
             img {
-                height: 100%;
+                // height: 100%;
             }
         }
 
@@ -58,7 +58,7 @@
             animation: slide-reverse 8s linear infinite;
 
             img {
-                height: 100%;
+                // height: 100%;
             }
         }
 
@@ -95,12 +95,14 @@
 }
 
 @keyframes slide-x-axis {
-    0% {
+    from {
         transform: translateX(0%);
+
     }
 
-    100% {
-        transform: translateX(-110%);
+    to {
+        transform: translateX(-173%);
+
     }
 }
 
@@ -229,6 +231,9 @@
 
         .content {
             display: block;
+            white-space: nowrap;
+            width: 100%;
+
 
             .main-content {
                 margin-left: 0;
@@ -259,6 +264,7 @@
 
             .animated-content-sm {
                 display: flex;
+                // flex-wrap: wrap;
                 justify-content: space-between;
                 animation: slide-x-axis 6s linear infinite;
 

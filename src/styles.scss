@@ -1,4 +1,6 @@
 /* global styles */
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+
 :root {
     --primary: #D6FF62;
 }
@@ -15,6 +17,13 @@
 @font-face {
     font-family: 'gt-america-bold-italic';
     src: url('assets/fonts/GT-America-Bold-Italic.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gt-america-italic';
+    src: url('assets/fonts/GT-America-Bold.otf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
